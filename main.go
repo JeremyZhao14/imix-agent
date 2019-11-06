@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"github.com/imix-agent/cron"
-	"github.com/imix-agent/funcs"
-	"github.com/imix-agent/g"
-	"github.com/imix-agent/http"
+	"imix-agent/cron"
+	"imix-agent/funcs"
+	"imix-agent/g"
+	"imix-agent/http"
 )
 //flag包：用于命令行参数解析
 //fmt：格式化
@@ -54,7 +54,7 @@ func main() {
 	g.InitRpcClients()
 
 	funcs.BuildMappers()
-////
+
 	go cron.InitDataHistory()
 
 	// 上报本机状态
