@@ -3,14 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/open-falcon/agent/cron"
-	"github.com/open-falcon/agent/funcs"
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/agent/http"
 	"os"
+	"github.com/imix-agent/cron"
+	"github.com/imix-agent/funcs"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/http"
 )
 //flag包：用于命令行参数解析
 //fmt：格式化
+//os: 系统命令
+
 //cron:定时任务
 //funcs: 信息采集包
 //g:全局结构与变量
@@ -32,8 +34,8 @@ func main() {
 		os.Exit(0)
 	}
 
-       //如果check的内容为true,检查collector
-       //checker.go 查看一些命令是否有返回值
+    //如果check的内容为true,检查collector
+    //checker.go 查看一些命令是否有返回值    
 	if *check {
 		funcs.CheckCollector()
 		os.Exit(0)
