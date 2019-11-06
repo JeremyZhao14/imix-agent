@@ -2,9 +2,9 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/agent/plugins"
-	"github.com/toolkits/file"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/plugins"
+	"github.com/imix-agent/toolkits/file"
 	"net/http"
 	"os/exec"
 )

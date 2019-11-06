@@ -2,8 +2,8 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/toolkits/nux"
-	"github.com/toolkits/sys"
+	"github.com/imix-agent/toolkits/nux"
+	"github.com/imix-agent/toolkits/sys"
 )
 //nux实际上是funcs下的一些采集工具
 //cmdg.o
@@ -17,6 +17,8 @@ func CheckCollector() {
 	_, listDiskErr := nux.ListDiskStats()
 	ports, listeningPortsErr := nux.ListeningPorts()
 	procs, psErr := nux.AllProcs()
+    fmt.Println(ports)
+    fmt.Println(procs)
 
     //du错误的处理
 	_, duErr := sys.CmdOut("du", "--help")
@@ -43,7 +45,7 @@ func CheckCollector() {
 	}
 }
 /* 
-[root@localhost bin]# falcon-agent -check
+[root@localhost bin]# imix-agent -check
 ps aux   ... ok
 kernel   ... ok
 df.bytes ... ok

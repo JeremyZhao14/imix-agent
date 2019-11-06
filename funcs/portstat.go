@@ -2,10 +2,10 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
-	"github.com/toolkits/nux"
-	"github.com/toolkits/slice"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
+	"github.com/imix-agent/toolkits/nux"
+	"github.com/imix-agent/toolkits/slice"
 	"log"
 )
 

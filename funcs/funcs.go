@@ -1,8 +1,8 @@
 package funcs
 
 import (
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
 )
 
 // 间隔internal时间执行fs中的函数
@@ -31,6 +31,7 @@ var Mappers []FuncsAndInterval
 // 根据调用指令类型和是否容易被挂起而分类(通过不同的goroutine去执行,避免相互之间的影响)
 func BuildMappers() {
     //设置传输数据的时间间隔
+    
 	interval := g.Config().Transfer.Interval
     //一上来就是一个切片
     //每个元素是 FuncsAndInterval struct 

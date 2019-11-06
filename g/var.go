@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-falcon/common/model"
-	"github.com/toolkits/net"
-	"github.com/toolkits/slice"
+	"github.com/imix-agent/common/model"
+	"github.com/imix-agent/toolkits/net"
+	"github.com/imix-agent/toolkits/slice"
 )
 
 var Root string

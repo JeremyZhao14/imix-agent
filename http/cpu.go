@@ -2,8 +2,8 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/agent/funcs"
-	"github.com/toolkits/nux"
+	"github.com/imix-agent/funcs"
+	"github.com/imix-agent/toolkits/nux"
 	"net/http"
 	"runtime"
 )

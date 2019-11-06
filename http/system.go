@@ -2,7 +2,7 @@ package http
 
 import (
 	"fmt"
-	"github.com/toolkits/nux"
+	"github.com/imix-agent/toolkits/nux"
 	"net/http"
 	"runtime"
 	"time"

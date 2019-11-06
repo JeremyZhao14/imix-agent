@@ -1,9 +1,9 @@
 package funcs
 
 import (
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
-	"github.com/toolkits/nux"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
+	"github.com/imix-agent/toolkits/nux"
 	"log"
 )
 

@@ -7,10 +7,10 @@ import (
 	"log"
 	"strings"
 
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
-	"github.com/toolkits/file"
-	"github.com/toolkits/sys"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
+	"github.com/imix-agent/toolkits/file"
+	"github.com/imix-agent/toolkits/sys"
 )
 
 func UrlMetrics() (L []*model.MetricValue) {

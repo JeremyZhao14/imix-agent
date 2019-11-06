@@ -9,6 +9,7 @@ imix-agent
 - 下载 git2
 ```bash
 yum remove git
+yum install curl-devel  xmlto curl libcurl asciidoc nss
 tar zxvf v2.2.1.tar.gz
 cd git-2.2.1
 make configure
@@ -25,21 +26,23 @@ wget https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz --no-check
 tar zxvf go1.8.3.linux-amd64.tar.gz
 mv go /usr/local/
 vim /etc/profile
-```
+
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOBIN=$GOROOT/bin
 export GOPATH= /root/go/ 
-- 生效环境变量
+
  source /etc/profile
+```
 
-
-
+- 安装agent
 ```bash
 # set $GOPATH and $GOROOT
-mkdir -p $GOPATH/src/github.com/imix-agent
-cd $GOPATH/src/github.com/imix-agent
+mkdir -p $GOPATH/src/github.com/
+cd $GOPATH/src/github.com/
 git clone https://JeremyZhao14@github.com/JeremyZhao14/imix-agent.git
+git clone --recursive git://github.com/JeremyZhao14/imix-agent.git
+git config --global http.sslversion tlsv1
 
 go get ./...
 ./control build

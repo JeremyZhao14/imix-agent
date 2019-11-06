@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-falcon/common/model"
+	"github.com/imix-agent/common/model"
 )
 
 // 定义transfer的rpcClient对应Map, transferClients读写锁

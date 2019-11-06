@@ -3,9 +3,9 @@ package cron
 import (
 	"time"
 
-	"github.com/open-falcon/agent/funcs"
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
+	"github.com/imix-agent/funcs"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
 )
 
 // 初始化历史数据,只有cpu和disk需要历史数据

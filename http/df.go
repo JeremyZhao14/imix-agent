@@ -2,8 +2,8 @@ package http
 
 import (
 	"fmt"
-	"github.com/toolkits/core"
-	"github.com/toolkits/nux"
+	"github.com/imix-agent/toolkits/core"
+	"github.com/imix-agent/toolkits/nux"
 	"net/http"
 )
 

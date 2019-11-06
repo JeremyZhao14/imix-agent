@@ -2,8 +2,8 @@ package http
 
 import (
 	"encoding/json"
-	"github.com/open-falcon/agent/g"
-	"github.com/open-falcon/common/model"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/common/model"
 	"net/http"
 )
 

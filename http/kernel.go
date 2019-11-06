@@ -1,9 +1,9 @@
 package http
 
 import (
-	"github.com/open-falcon/agent/g"
-	"github.com/toolkits/nux"
-	"github.com/toolkits/sys"
+	"github.com/imix-agent/g"
+	"github.com/imix-agent/toolkits/nux"
+	"github.com/imix-agent/toolkits/sys"
 	"net/http"
 )
 
