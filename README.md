@@ -17,7 +17,7 @@ make all doc
 make install install-doc install-html
 echo "export PATH=$PATH:/usr/local/git/bin" >> /etc/bashrc
 source /etc/bashrc
-''' 
+``` 
  
 - 下载复制 golang
 ```bash
@@ -25,7 +25,7 @@ wget https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz --no-check
 tar zxvf go1.8.3.linux-amd64.tar.gz
 mv go /usr/local/
 vim /etc/profile
-'''
+```
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOBIN=$GOROOT/bin
