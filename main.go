@@ -50,14 +50,16 @@ func main() {
 	g.InitRootDir()
     //获取内网地址
 	g.InitLocalIps()
-    //初始化heartbeat配置
+    //获得heartbeat配置
 	g.InitRpcClients()
 
+
+    //获取采集数据的列表
 	funcs.BuildMappers()
-////
+// 初始化历史数据,只有cpu和disk需要历史数据,用于获取当前时刻的参数
 	go cron.InitDataHistory()
 
-	// 上报本机状态
+	// 上报本机agent状态
 	cron.ReportAgentStatus()
 	// 同步插件
 	cron.SyncMinePlugins()
@@ -72,6 +74,9 @@ func main() {
 	// 启动dashboard server
 	go http.Start()
 
+
+
+//很多时候我们需要让main函数不退出，让它在后台一直执行，
 	select {}
 
 }

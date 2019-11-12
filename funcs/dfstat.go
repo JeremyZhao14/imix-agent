@@ -9,11 +9,17 @@ import (
 
 func DeviceMetrics() (L []*model.MetricValue) {
 	mountPoints, err := nux.ListMountPoint()
+		//fsSpec := fields[0]
+		//fsFile := fields[1]
+		//fsVfstype := fields[2]
 
 	if err != nil {
 		log.Println(err)
 		return
 	}
+
+
+
 
 	var diskTotal uint64 = 0
 	var diskUsed uint64 = 0
@@ -42,7 +48,7 @@ func DeviceMetrics() (L []*model.MetricValue) {
 		L = append(L, GaugeValue("df.inodes.free.percent", du.InodesFreePercent, tags))
 
 	}
-
+    //补充 disk total
 	if len(L) > 0 && diskTotal > 0 {
 		L = append(L, GaugeValue("df.statistics.total", float64(diskTotal)))
 		L = append(L, GaugeValue("df.statistics.used", float64(diskUsed)))

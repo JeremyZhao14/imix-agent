@@ -10,11 +10,3 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-common/
-toolkits/core/
-toolkits/file/
-toolkits/net/
-toolkits/nux/
-toolkits/slice/
-toolkits/sys/
-toolkits/time/

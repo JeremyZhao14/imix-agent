@@ -1,76 +1,58 @@
-2019/11/06 15:44:47 cfg.go:129: read config file: cfg.json successfully
-2019/11/06 15:44:47 http.go:77: listening :1988
-2019/11/06 15:44:47 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:44:49 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:44:53 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:45:01 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:45:17 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:45:47 var.go:60: => <Total=7> <Endpoint:localhost.localdomain, Metric:df.bytes.free.percent, Type:GAUGE, Tags:mount=/,fstype=ext4, Step:60, Time:1573026347, Value:96.33987086791934>
-2019/11/06 15:45:47 var.go:60: => <Total=88> <Endpoint:localhost.localdomain, Metric:agent.alive, Type:GAUGE, Tags:, Step:60, Time:1573026347, Value:1>
-2019/11/06 15:45:47 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:45:47 var.go:60: => <Total=6> <Endpoint:localhost.localdomain, Metric:ss.closed, Type:GAUGE, Tags:, Step:60, Time:1573026347, Value:0>
-2019/11/06 15:45:49 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:45:49 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:45:53 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:46:01 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:46:17 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:46:49 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:46:53 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:46:55 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:46:59 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:47:07 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:47:23 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:47:53 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:47:55 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:47:55 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:47:59 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:48:07 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:48:23 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:48:55 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:48:59 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:49:01 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:49:05 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:49:13 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:49:29 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:49:59 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:50:01 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:50:01 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:50:05 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:50:13 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:50:29 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:51:01 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:51:05 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:51:07 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:51:11 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:51:19 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:51:35 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:52:05 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:52:07 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:52:07 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:52:11 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:52:19 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:52:35 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:53:07 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:53:11 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:53:13 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:53:17 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:53:25 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:53:41 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:54:11 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:54:13 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:54:13 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:54:17 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:54:25 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:54:41 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:55:13 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:55:17 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:55:19 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:55:23 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:55:31 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:55:47 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:56:17 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:56:19 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
-2019/11/06 15:56:19 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:56:23 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:56:31 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
-2019/11/06 15:56:47 rpc.go:47: dial 127.0.0.1:8433 fail: dial tcp 127.0.0.1:8433: getsockopt: connection refused
+(*g.GlobalConfig)
+  (g.GlobalConfig)
+    Debug(bool) true
+    Hostname(string) ""
+    IP(string) ""
+    Plugin(*g.PluginConfig)
+      Plugin(g.PluginConfig)
+        Enabled(bool) false
+        Dir(string) "./plugin"
+        Git(string) "https://github.com/imix-agent/plugin.git"
+        LogDir(string) "./logs"
+    Heartbeat(*g.HeartbeatConfig)
+      Heartbeat(g.HeartbeatConfig)
+        Enabled(bool) true
+        Addr(string) "127.0.0.1:6030"
+        Interval(int) 60
+        Timeout(int) 1000
+    Transfer(*g.TransferConfig)
+      Transfer(g.TransferConfig)
+        Enabled(bool) true
+        Addrs([]string)
+          0(string) "127.0.0.1:8433"
+          1(string) "127.0.0.1:8433"
+        Interval(int) 60
+        Timeout(int) 1000
+    Http(*g.HttpConfig)
+      Http(g.HttpConfig)
+        Enabled(bool) true
+        Listen(string) ":1988"
+        Backdoor(bool) false
+    Collector(*g.CollectorConfig)
+      Collector(g.CollectorConfig)
+        IfacePrefix([]string)
+          0(string) "eth"
+          1(string) "em"
+    IgnoreMetrics(map[string]bool)
+      mem.memused(bool) true
+      cpu.busy(bool) true
+      df.inodes.used.percent(bool) true
+      mem.memtotal(bool) true
+      mem.swapused(bool) true
+      df.bytes.used.percent(bool) true
+      df.inodes.used(bool) true
+      mem.memfree(bool) true
+      df.bytes.free(bool) true
+      mem.memused.percent(bool) true
+      mem.swaptotal(bool) true
+      df.inodes.free(bool) true
+      mem.swapfree(bool) true
+      df.bytes.total(bool) true
+      df.bytes.used(bool) true
+      df.inodes.total(bool) true
+2019/11/12 16:08:32 cfg.go:130: read config file: cfg.json successfully
+2019/11/12 16:08:32 http.go:77: listening :1988
+2019/11/12 16:08:32 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
+2019/11/12 16:08:34 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
+2019/11/12 16:08:38 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused
+2019/11/12 16:08:46 rpc.go:47: dial 127.0.0.1:6030 fail: dial tcp 127.0.0.1:6030: getsockopt: connection refused

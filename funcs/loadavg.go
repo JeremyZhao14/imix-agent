@@ -18,6 +18,8 @@ func LoadAvgMetrics() []*model.MetricValue {
 		GaugeValue("load.1min", load.Avg1min),
 		GaugeValue("load.5min", load.Avg5min),
 		GaugeValue("load.15min", load.Avg15min),
+		GaugeValue("load.runningproc", load.RunningProcesses),
+		GaugeValue("load.allproc", load.TotalProcesses),
 	}
 
 }

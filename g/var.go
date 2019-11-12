@@ -35,6 +35,7 @@ func InitLocalIps() {
 }
 
 var (
+    //g/rpc.go
 	HbsClient *SingleConnRpcClient
 )
 

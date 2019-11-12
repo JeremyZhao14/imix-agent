@@ -5,10 +5,9 @@ import (
 	"log"
 	"os"
 	"sync"
-
+//	"github.com/imix-agent/godump"
 	"github.com/imix-agent/toolkits/file"
 )
-//toolkits似乎是golang的标准包
 
 type PluginConfig struct {
 	Enabled bool   `json:"enabled"`
@@ -41,6 +40,7 @@ type CollectorConfig struct {
 	IfacePrefix []string `json:"ifacePrefix"`
 }
 
+// hostname 和IP要agent从机器获取
 type GlobalConfig struct {
 	Debug         bool             `json:"debug"`
 	Hostname      string           `json:"hostname"`
@@ -112,7 +112,7 @@ func ParseConfig(cfg string) {
 		log.Fatalln("read config file:", cfg, "fail:", err)
 	}
 
-    //GlobalConfig 在上方,全局配置，实际上就是cfg.json的内容
+    //GlobalConfig 定义在上方,全局配置，实际上就是cfg.json的内容
 	var c GlobalConfig
     //反序列化，json转为数列
     //func Unmarshal(data []byte, v interface{}) error 注意参数的类型
@@ -125,6 +125,7 @@ func ParseConfig(cfg string) {
 	defer lock.Unlock()
 
 	config = &c
+//    godump.Dump(config)
 
 	log.Println("read config file:", cfg, "successfully")
 }

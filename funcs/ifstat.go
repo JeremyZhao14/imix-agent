@@ -8,6 +8,7 @@ import (
 )
 
 func NetMetrics() []*model.MetricValue {
+    //仅获取需要的网卡
 	return CoreNetMetrics(g.Config().Collector.IfacePrefix)
 }
 

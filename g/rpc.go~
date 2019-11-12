@@ -1,7 +1,7 @@
 package g
 
 import (
-	"github.com/toolkits/net"
+	"github.com/imix-agent/toolkits/net"
 	"log"
 	"math"
 	"net/rpc"

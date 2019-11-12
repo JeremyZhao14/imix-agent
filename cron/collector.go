@@ -8,8 +8,9 @@ import (
 	"github.com/imix-agent/common/model"
 )
 
-// 初始化历史数据,只有cpu和disk需要历史数据
+// 初始化历史数据,只有cpu和disk需要历史数据,用于获取当前时刻的参数
 func InitDataHistory() {
+    //死循环
 	for {
 		funcs.UpdateCpuStat()
 		funcs.UpdateDiskStats()

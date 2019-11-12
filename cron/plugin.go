@@ -42,19 +42,19 @@ func syncMinePlugins() {
 		if err != nil {
 			continue
 		}
-        //疑问，这里似乎只上传了hostname
+        //这里只上传了hostname,没有checksum
 		req := model.AgentHeartbeatRequest{
 			Hostname: hostname,
 		}
 
 		var resp model.AgentPluginsResponse
-		// 调用rpc提供的hbs接口,返回plugin
+		// 调用rpc函数，请求hbs的程序,返回plugin string[]
 		err = g.HbsClient.Call("Agent.MinePlugins", req, &resp)
 		if err != nil {
 			log.Println("ERROR:", err)
 			continue
 		}
-		// 保证时间顺序正确
+		// 保证时间可用
 		if resp.Timestamp <= timestamp {
 			continue
 		}
@@ -76,7 +76,7 @@ func syncMinePlugins() {
 		for _, p := range pluginDirs {
 			// 根据相对路径生成plugin的map
 			underOneDir := plugins.ListPlugins(strings.Trim(p, "/"))
-			// 为什么不直接赋给desiredAll  ????
+			// 为什么不直接赋给desiredAll
 			for k, v := range underOneDir {
 				desiredAll[k] = v
 			}
